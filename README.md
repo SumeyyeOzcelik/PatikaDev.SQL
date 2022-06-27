@@ -1,1 +1,1 @@
-# dosya-ismi.sql
+# PatikaDev.SQL
