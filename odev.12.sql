@@ -12,7 +12,7 @@ WHERE rental_rate =
     SELECT MAX(rental_rate ) FROM film
 );
 
---film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
+--film tablosunda en düşük rental_rate ve en düşük replacement_cost değerlerine sahip filmleri sıralayınız.
 SELECT COUNT(*) FROM film
 WHERE rental_rate =
 (
@@ -20,7 +20,7 @@ WHERE rental_rate =
 ) 
 AND 
 (
-    replacement_cost = SELECT MIN(replacement_cost) FROM film
+    SELECT MIN(replacement_cost) FROM film
 );
 
 --payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
