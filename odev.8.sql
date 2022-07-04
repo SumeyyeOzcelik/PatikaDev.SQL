@@ -1,4 +1,4 @@
--- 1 - test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+--test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 
 CREATE TABLE Employee (
 	id INTEGER,
@@ -73,4 +73,4 @@ WHERE id BETWEEN 7 AND 11;
 
 DELETE FROM employee
 WHERE id BETWEEN 33 AND 37
-RETURNING *;
+RETURNING;
